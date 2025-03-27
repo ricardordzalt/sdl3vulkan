@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Configure CMake Preset",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--preset", "default"],
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "Configura CMake si el build dir no existe"
+    },
+    {
+      "label": "Build with CMake Preset",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--build", "--preset", "default"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "dependsOn": ["Configure CMake Preset"],
+      "problemMatcher": ["$gcc"],
+      "detail": "Build project using CMake preset 'default'"
+    }
+  ]
+}
