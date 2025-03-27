@@ -1,0 +1,11 @@
+external/vcpkg/buildtrees/
+external/vcpkg/downloads/
+external/vcpkg/packages/
+external/vcpkg/installed/
+external/vcpkg/vcpkg_installed/
+external/vcpkg/out/
+external/vcpkg/vcpkg
+
+build
+
+vcpkg_installed
